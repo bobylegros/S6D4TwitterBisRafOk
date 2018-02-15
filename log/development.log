@@ -1,0 +1,117 @@
+Started GET "/" for 127.0.0.1 at 2018-02-15 15:50:36 +0100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  Rendered tweets/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 308ms (Views: 187.5ms)
+
+
+Started POST "/tweet" for 127.0.0.1 at 2018-02-15 15:50:40 +0100
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7tCu61FarYXXAcZWBH8P+N50iInYtrM1PtNjrEAYfJPeB65lEZo9whd54z4tbu+3m1RCgNB+TPUgpKuQPf6j7A==", "message"=>"salut", "commit"=>"Tweet"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Completed 500 Internal Server Error in 3ms
+
+
+
+Dotenv::FormatError - Line "Consumer Key         =\"utIyDAYsVghecV2YhsHEHWQJe\"" doesn't match format:
+  app/services/send_tweet.rb:8:in `initialize'
+  app/controllers/tweets_controller.rb:4:in `create'
+
+Started POST "/__better_errors/8b6f18f61c76f4a6/variables" for 127.0.0.1 at 2018-02-15 15:50:40 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 15:53:23 +0100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  Rendered tweets/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 15.9ms)
+
+
+Started POST "/tweet" for 127.0.0.1 at 2018-02-15 15:53:26 +0100
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kp+A8y9xQ5zUNSfkLxEENyRW6pmcuU/NiE68Nc0a8JGiSIB9b7HT2xRNAowGAOR4YXYgkJRxsA2WOXQJsPwv7g==", "message"=>"Salut", "commit"=>"Tweet"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Completed 500 Internal Server Error in 2ms
+
+
+
+Dotenv::FormatError - Line "Consumer Key \t          =\"utIyDAYsVghecV2YhsHEHWQJe\"" doesn't match format:
+  app/services/send_tweet.rb:8:in `initialize'
+  app/controllers/tweets_controller.rb:4:in `create'
+
+Started POST "/__better_errors/2b46f00cc57e82ff/variables" for 127.0.0.1 at 2018-02-15 15:53:26 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 15:55:01 +0100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  Rendered tweets/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 290ms (Views: 175.7ms)
+
+
+Started POST "/tweet" for 127.0.0.1 at 2018-02-15 15:55:04 +0100
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tg4hNq+rLGu84sjsc4ONfiWxNkkwYux71Mx9rYuaJuCG2SG472u8LHya7YRakm0xYJH8QDiqE7vKu7WR9nz5nw==", "message"=>"salut", "commit"=>"Tweet"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Completed 500 Internal Server Error in 2ms
+
+
+
+Dotenv::FormatError - Line "Consumer Key \t          =\"utIyDAYsVghecV2YhsHEHWQJe\"" doesn't match format:
+  app/services/send_tweet.rb:8:in `initialize'
+  app/controllers/tweets_controller.rb:4:in `create'
+
+Started POST "/__better_errors/61bd59da9bf040cb/variables" for 127.0.0.1 at 2018-02-15 15:55:04 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 15:55:45 +0100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  Rendered tweets/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 17.2ms)
+
+
+Started POST "/tweet" for 127.0.0.1 at 2018-02-15 15:55:53 +0100
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sAzBEv6UDgW0Zj+f6BnOS6E0Rn3rJX9h3ZM6YmrVQm+A28GcvlSeQnQeGvfBCC4E5BSMdOPtgKHD5PJeFzOdEA==", "message"=>"saliut", "commit"=>"Tweet"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Completed 500 Internal Server Error in 1066ms
+
+
+
+Twitter::Error::BadRequest - Bad Authentication data.:
+  app/services/send_tweet.rb:26:in `send_tweet'
+  app/services/send_tweet.rb:19:in `perform'
+  app/controllers/tweets_controller.rb:4:in `create'
+
+Started POST "/__better_errors/e35ed547c8487784/variables" for 127.0.0.1 at 2018-02-15 15:55:54 +0100
+Started POST "/tweet" for 127.0.0.1 at 2018-02-15 15:57:25 +0100
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sAzBEv6UDgW0Zj+f6BnOS6E0Rn3rJX9h3ZM6YmrVQm+A28GcvlSeQnQeGvfBCC4E5BSMdOPtgKHD5PJeFzOdEA==", "message"=>"salut", "commit"=>"Tweet"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+Completed 500 Internal Server Error in 914ms
+
+
+
+Twitter::Error::BadRequest - Bad Authentication data.:
+  app/services/send_tweet.rb:26:in `send_tweet'
+  app/services/send_tweet.rb:19:in `perform'
+  app/controllers/tweets_controller.rb:4:in `create'
+
+Started POST "/__better_errors/aa9fcc99609f9acf/variables" for 127.0.0.1 at 2018-02-15 15:57:26 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 15:59:51 +0100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  Rendered tweets/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 26.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-15 16:00:04 +0100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  Rendered tweets/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 315ms (Views: 194.6ms)
+
+
+Started POST "/tweet" for 127.0.0.1 at 2018-02-15 16:00:07 +0100
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u9d26yliZRREkoCvFwGt0yUCFDvT6HKChhchaa3runWLAHZlaaL1U4Tqpcc+EE2cYCLeMtsgjUKYYOlV0A1lCg==", "message"=>"salut", "commit"=>"Tweet"}
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+No template found for TweetsController#create, rendering head :no_content
+Completed 204 No Content in 818ms
+
+

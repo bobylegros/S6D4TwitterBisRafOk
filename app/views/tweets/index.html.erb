@@ -1,0 +1,5 @@
+<%= form_tag("/tweet") do %>
+  <%= label_tag(:message, "Alors quel sera ton tweet ?") %>
+  <%= text_field_tag(:message) %>
+  <%= submit_tag("Tweet") %>
+<% end %>
